@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>182033-Simeon's file api sorting website</title>
+</head>
+
+<body>
+    <div>
+
+        <p>This site displays your results</p>
+
+        <p>Result: {{resultMessage}}</p>
+        <p>Processing time in milliseconds: {{processingTimeMillis}}</p>
+        <form method="post" action="/downloadFile">
+            <input id="pathToFile" name="pathToFile" type="hidden" value={{pathToFile}}/>
+            <input type="submit" value="submit" id="submit" />
+        </form>
+
+    </div>
+
+</body>
+
+</html>
